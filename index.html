@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ZiirTech Portal</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: radial-gradient(circle at top, #2a0066 0%, #0f001f 100%);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .card {
+      background: rgba(30, 0, 60, 0.88);
+      border-radius: 20px;
+      box-shadow: 0 18px 40px rgba(10, 0, 20, 0.6), inset 0 1px 0 rgba(255,255,255,0.02);
+      padding: 2.2rem;
+      text-align: center;
+      width: 360px;
+      max-width: 95vw;
+      backdrop-filter: blur(8px);
+      color: #fff;
+    }
+
+    .logo {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 0 auto 0.9rem auto;
+      box-shadow: 0 10px 30px rgba(160, 60, 255, 0.18);
+      display: block;
+    }
+
+    h1 {
+      font-size: 1.7rem;
+      margin: 0.5rem 0 0.35rem 0;
+      font-weight: 700;
+      line-height: 1;
+    }
+
+    p {
+      color: #d6bdf8;
+      margin: 0 0 1.15rem 0;
+      font-size: 0.95rem;
+    }
+
+    /* CONTENEDOR DE BOTONES: aseguramos centrado */
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      align-items: center; /* centra los elementos hijos */
+      margin-bottom: 0.8rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      max-width: 300px;     /* evita que el botón llene más ancho en pantallas grandes */
+      padding: 0.95rem 1rem;
+      border: none;
+      border-radius: 50px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      color: white;
+      background: linear-gradient(90deg, #7b2ff7, #9f44d3);
+      transition: transform .22s ease, box-shadow .22s ease, background .22s ease;
+      box-shadow: 0 6px 18px rgba(110, 40, 220, 0.18);
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 26px rgba(130, 60, 240, 0.26);
+      background: linear-gradient(90deg, #9f44d3, #c471ed);
+    }
+
+    .footer {
+      font-size: 0.85rem;
+      color: #c9aef8;
+      margin-top: 0.6rem;
+      opacity: 0.95;
+    }
+
+    /* Ajustes responsive menores */
+    @media (max-width:420px){
+      .card{ padding:1.6rem; width:92vw; }
+      .logo{ width:92px; height:92px; }
+      h1{ font-size:1.45rem; }
+      .btn{ max-width: 100%; padding:0.85rem 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <!-- Asegúrate de usar la ruta correcta de tu logo -->
+    <img src="logo.png" alt="ZiirTech Logo" class="logo">
+
+    <h1>ZiirTech</h1>
+    <p>Bienvenido. Selecciona una opción para continuar.</p>
+
+    <div class="buttons">
+      <!-- botones centrados por .buttons y .btn -->
+      <a href="https://ziirtech-14582.web.app/" class="btn" target="_blank" rel="noopener noreferrer">🌐 Visitar sitio web</a>
+      <a href="https://www.instagram.com/ziirtech" class="btn" target="_blank" rel="noopener noreferrer">📸 Instagram</a>
+    </div>
+
+    <div class="footer">
+      Gracias por visitar ZiirTech.<br>
+      <span style="opacity:0.78;">Innovación, diseño y tecnología.</span>
+    </div>
+  </div>
+</body>
+</html>
